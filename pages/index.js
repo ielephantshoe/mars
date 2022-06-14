@@ -70,7 +70,7 @@ function Index({ navItems, sections }) {
   )
 }
 
-export async function getStaticProps({ req }) {
+export async function getStaticProps() {
   const data = await fetchGlobalEntry("appData")
 
   const sections = data.donationPageSections

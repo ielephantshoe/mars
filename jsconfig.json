@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/theme": ["lib/theme.js"],
+      "@/lib/*": ["lib/*"],
+      "@/components/*": ["components/*"]
+    }
+  }
+}

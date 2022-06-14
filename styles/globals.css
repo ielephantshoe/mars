@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "IntelOneBold";
+  src: local("IntelOneBold"),
+   url(/fonts/intelone-display-bold.otf) format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "IntelOneRegular";
+  src: local("IntelOneRegular"),
+    url(/fonts/IntelOneDisplay-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background-color: #022D62 !important;
+  overflow: hidden;
+}
+
+#portrait-popup {
+  display: none;
+}
+
+@media screen and (orientation: portrait){
+  #content {
+    display: none;
+  }
+  
+  #portrait-popup {
+    display: flex;
+  }
+}

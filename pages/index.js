@@ -5,15 +5,11 @@ import { fetchGlobalEntry } from "@/lib/contentful"
 import { useTrackedValue } from "@/lib/track"
 import Head from "next/head"
 import { useRouter } from "next/router"
-import { useEffect } from "react"
 import { Flex } from "theme-ui"
 function Index({ navItems, sections }) {
   const router = useRouter()
   const [value] = useTrackedValue()
 
-  useEffect(() => {
-    console.log(value)
-  }, [value])
   return (
     <Flex
       sx={{
